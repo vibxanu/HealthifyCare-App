@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF7FF"
+    android:padding="16dp">
+
+    <!-- 🩺 Healthify Mini Logo + Text -->
+    <LinearLayout
+        android:id="@+id/topHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_healthify_logo"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthify Mini"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 📍 Location -->
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delivery Location : ALL OVER PAKISTAN"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#800000"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/topHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 🛒 Section Title -->
+    <TextView
+        android:id="@+id/tvBuyMedicine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Buy Medicine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#2E3192"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 🔍 Search Medicine -->
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@drawable/search_background"
+        android:elevation="2dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvBuyMedicine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_weight="1"
+            android:hint="Search medicine..."
+            android:padding="16dp"
+            android:background="@android:color/transparent"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:importantForAccessibility="yes" />
+    </LinearLayout>
+
+    <!-- 💊 RecyclerView for Medicine List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMedicines"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutSearch"
+        app:layout_constraintBottom_toTopOf="@id/layoutButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 🔘 Buttons Layout -->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnGoToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="GO TO CART"
+            android:textAllCaps="false"
+            android:backgroundTint="#5E17EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="16dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="BACK"
+            android:textAllCaps="false"
+            android:backgroundTint="#5E17EB"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

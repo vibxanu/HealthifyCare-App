@@ -1,0 +1,114 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Doctor Image -->
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_image_bg"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doctor" />
+
+        <!-- Doctor Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Ayesha Khan"
+                android:textColor="#003366"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Specialty -->
+            <TextView
+                android:id="@+id/doctorSpecialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="Cardiologist"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/doctorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MBBS, FCPS"
+                android:textColor="#777777"
+                android:textSize="12sp"
+                android:layout_marginTop="1dp"/>
+
+            <!-- Rating -->
+            <RatingBar
+                android:id="@+id/doctorRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.5"
+                android:scaleX="0.65"
+                android:scaleY="0.65"
+                android:layout_marginTop="4dp" />
+
+            <!-- Book Button + Status in same row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+                <Button
+                    android:id="@+id/bookButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:textSize="11.5sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_rounded"
+                    android:backgroundTint="#00BCD4"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp" />
+
+
+
+                <!-- Doctor Status -->
+                <TextView
+                    android:id="@+id/doctorStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:textColor="#008000"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

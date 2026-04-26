@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            app:tint="#003366"
+            android:scaleType="fitCenter"
+            android:contentDescription="Back"
+            android:padding="4dp" />
+
+        <!-- Doctor Image -->
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/doctor"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_image_bg" />
+
+        <!-- Doctor Name -->
+        <TextView
+            android:id="@+id/appointmentDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#003366"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Specialty & Title -->
+        <TextView
+            android:id="@+id/appointmentSpecialty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specialty"
+            android:textColor="#555"
+            android:gravity="center"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/appointmentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#555"
+            android:gravity="center"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/appointmentRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:textColor="#FFA000"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Patient Name -->
+        <EditText
+            android:id="@+id/patientName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Your Full Name"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Patient Contact -->
+        <EditText
+            android:id="@+id/patientContact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Gender -->
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:text="Male"
+                android:textColor="#003366"
+                android:buttonTint="#4CAF50" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:text="Female"
+                android:textColor="#003366"
+                android:buttonTint="#4CAF50" />
+
+            <RadioButton
+                android:id="@+id/genderOther"
+                android:text="Other"
+                android:textColor="#003366"
+                android:buttonTint="#4CAF50" />
+        </RadioGroup>
+
+        <!-- Problem -->
+        <EditText
+            android:id="@+id/problemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe your problem"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Appointment Type -->
+        <Spinner
+            android:id="@+id/appointmentTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Select Date Button -->
+        <Button
+            android:id="@+id/selectDateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Appointment Date"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Select Time Button -->
+        <Button
+            android:id="@+id/selectTimeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Appointment Time"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Confirm Appointment -->
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Appointment"
+            android:textColor="#ffffff"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

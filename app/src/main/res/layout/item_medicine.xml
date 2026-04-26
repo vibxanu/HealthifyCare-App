@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/medicine_item_bg">
+
+        <!-- Circular Medicine Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivMedicine"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_medicine_placeholder"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="Medicine Image" />
+
+        <!-- Medicine Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMedicineName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#222222" />
+
+            <TextView
+                android:id="@+id/tvMedicineDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="14sp"
+                android:textColor="#555555"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvMedicinePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs. 120.00"
+                android:textSize="14sp"
+                android:textColor="#5E17EB"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Select Checkbox -->
+        <CheckBox
+            android:id="@+id/cbSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
