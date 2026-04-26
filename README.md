@@ -29,13 +29,13 @@ HealthifyCare is an Android healthcare application designed to make healthcare s
 ![Cart Screen](images/cart_screen.jpeg)
 
 ### 🔍 Search Doctor Screen
-![Search Doctor Screen](search.png)
+![Search](images/Search%20Doctor%20Screen.jpeg)
 
 ### 📅 Book Appointment Screen
-![Book Appointment Screen](appointment.png)
+![Book](images/Book%20Appointment%20Screen.jpeg)
 
 ### 💳 Checkout Screen
-![Checkout Screen](checkout.png)
+![Checkout](images/Checkout%20Screen.jpeg)
 ## 👩‍💻 Developer
 - vibxanu
 
