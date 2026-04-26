@@ -24,7 +24,7 @@ HealthifyCare is an Android healthcare application designed to make healthcare s
 ![Medicine Store Screen](medicine.png)
 
 ### 🛒 Cart Screen
-![Cart Screen](cart.png)
+![Cart Screen](images/Cart Screen.jpeg)
 
 ### 🔍 Search Doctor Screen
 ![Search Doctor Screen](search.png)
