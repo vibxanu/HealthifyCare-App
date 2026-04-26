@@ -15,13 +15,15 @@ HealthifyCare is an Android healthcare application designed to make healthcare s
 - XML Layouts
 
 ## 📱 Screenshots
+
 ### 🏠 Home Screen
-![Home](images/Home.png)
+![Home](images/home.jpeg)
+
 ### 🦠 Disease Information Screen
-![Disease Information Screen](disease.png)
+![Disease](images/Disease%20Information%20Screen.jpeg)
 
 ### 💊 Medicine Store Screen
-![Medicine Store Screen](medicine.png)
+![Medicine](images/Medicine%20Store%20Screen.jpeg)
 
 ### 🛒 Cart Screen
 ![Cart Screen](images/cart_screen.jpeg)
